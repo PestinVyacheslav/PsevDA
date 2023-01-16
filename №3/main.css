@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+div,h1,h2,span,a{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 12px;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.head>a{
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px 0;
+    background-color: #dfdddd;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+.head div{
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+.head div>a{
+    color: black;
+    font-weight: 500;
+}
+
+.iteam{
+    width: 100%;
+}
+.iteam img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.iteam:hover img{
+    opacity: 0.4;
+}
+
+.iteam span{
+    font-size: 5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-catalog{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo-catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.promo-catalog h2{
+    width: 100%;
+    font-size: 9.2vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.promo-catalog .iteam{
+    width: 43vw;
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        margin: 40px;
+    }
+    
+    .head{
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: 3vw;
+    }
+
+    .head>a{
+        width: 300px;
+    }
+    .iteam span{
+        font-size: 1.33vw;
+    }
+    .promo-catalog h2{
+        font-size: 2.5vw;
+        font-weight: 500;
+        text-align: unset;
+    }
+
+    .promo-catalog{
+        gap: 20px;
+    }
+
+    .main-catalog{
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    
+    .main-catalog .iteam{
+        width: 29.7vw;
+    }
+
+    .promo-catalog .iteam{
+        width: 22vw;
+    }
+}
