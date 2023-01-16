@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Лабораторная работа №5 Post-add</title>
+</head>
+<body>
+
+    <div class="head">
+        <a href="."><img src="./Iteam/logo.svg" alt=""></a>
+        <div>
+            <a href="."><img src="./Iteam/i-user.svg" alt=""><span>@UserAccountLogin</span></a>
+            <button>Новая запись</button>
+            <a href="."><span>Зарегистрироваться</span></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Добавить запись</h1>
+        <form action="" method="post">
+            <label for="NameIteam">
+                Заголовок
+                <div>
+                    <input type="text" id="NameIteam" maxlength="150">
+                </div>
+            </label>
+            <label for="TextIteam">
+                Текст
+                <div>
+                    <textarea type="text" id="TextIteam"></textarea>
+                </div>
+            </label>
+            <label for="CategoryIteam">
+                Выберите категорию
+                <div>
+                    <select id="CategoryIteam">
+                        <option value="0">Без категории</option>
+                    </select>
+                </div>
+            </label>
+            <label for="ImageIteam" class="ImageIteam">
+                <span><img src="./Iteam/paperclip.svg" alt=""> Прикрепить файл изображения</span>                
+                <div>
+                    <input type="file" id="ImageIteam" accept="image/*">
+                </div>
+            </label>
+            <button type="submit">Опубликовать</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="leftElmentFooter">
+            <a href="."><span>Об авторе</span></a>
+            <a href="."><span>Технологии</span></a>
+        </div>
+        <div class="rightElmentFooter">
+            <span>© Blog, 2022</span>
+        </div>
+    </div>
+    <script src="./mian.js"></script>
+</body>
+</html>

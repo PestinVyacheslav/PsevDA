@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Лабораторная работа №5 reg</title>
+</head>
+<body>
+
+    <div class="head">
+        <a href="."><img src="./Iteam/logo.svg" alt=""></a>
+        <div>
+            <a href="."><img src="./Iteam/i-user.svg" alt=""><span>Войти</span></a>
+            <a href="."><span>Зарегистрироваться</span></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Регистрация</h1>
+        
+        <form action="" method="post">
+            <div class="fr">
+                <label for="NameUser">
+                    Имя
+                    <div>
+                        <input type="text" id="NameUser">
+                    </div>
+                </label>
+                <label for="FamilyUser">
+                    Фамилия
+                    <div>
+                        <input type="text" id="FamilyUser">
+                    </div>
+                </label>
+            </div>
+            <div class="sc">
+                <label for="LoginUser">
+                    Логин *
+                    <div>
+                        <input type="text" id="LoginUser" required>
+                        <div class="Conditions">
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Только буквы, цифры и символы @.+-_</div>
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Не более 150 символов</div>
+                        </div>
+                    </div>
+                </label>
+                <label for="MailUser">
+                    E-mail
+                    <div>
+                        <input type="email" id="MailUser">
+                    </div>
+                </label>
+            </div>
+            <div class="ls">
+                <label for="PasswordUser">
+                    Пароль *
+                    <div>
+                        <input type="password" id="PasswordUser" required>
+                        <div class="Conditions">
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Минимум 8 символов</div>
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Не может состоять только из цифр</div>                            
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Не должен совпадать с логином</div>
+                        </div>
+                    </div>
+                </label>
+                <label for="PasswordConfirmation">
+                    Подтверждение пароля *
+                    <div>
+                        <input type="text" id="PasswordConfirmation" required>
+                        <div class="Conditions">
+                            <div class="condition"><img src="./Iteam/X.png" alt="">Пароли не совпадают</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <label class="Agreement" for="Agreement">
+                Даю своё согласие на обработку персональных данных
+                <div>
+                    <input type="checkbox" id="Agreement" checked>
+                </div>
+            </label>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="leftElmentFooter">
+            <a href="."><span>Об авторе</span></a>
+            <a href="."><span>Технологии</span></a>
+        </div>
+        <div class="rightElmentFooter">
+            <span>© Blog, 2022</span>
+        </div>
+    </div>
+    <script>
+        let submit = document.querySelector("form button");
+        let check = document.querySelector("#Agreement");
+
+        function disabledBtn(){
+            if(check.checked){
+                submit.disabled = false;
+            }else{
+                submit.disabled = true;
+            }
+        };
+        
+        window.onload = function(){
+            disabledBtn();
+        };
+        check.onclick = function(){
+            disabledBtn();
+        };
+    </script>
+    <script src="./mian.js"></script>
+</body>
+</html>
