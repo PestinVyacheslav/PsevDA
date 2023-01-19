@@ -1,0 +1,225 @@
+body,body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+@font-face {
+    font-family: "Golos Text VF"; 
+    src: url("./Golos-Text_VF.ttf") format("truetype");
+} 
+
+header{
+    display: flex;
+    padding: 16px 60px;
+    justify-content: space-between;
+    background-color: #624C91;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+a{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-underline-offset: 4px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    color: #FFFFFF;
+}
+
+main{
+    margin: 60px 0;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main h1{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 777;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #000000;
+}
+
+.catalogAndList{
+    display: flex;
+    gap: 20px;
+}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80.375vw;
+}
+
+.catalog button{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #624C90;
+    padding: 21px 0;
+    background-color: transparent;
+    border: 3px solid #624C90;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.iteam{
+    width: 39.25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(98, 76, 144, 0.1);
+    border-radius: 5px;
+}
+
+.block-text-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px;
+}
+
+.iteam h3{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.iteam p{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.down{
+    display: flex;
+    gap: 4px;
+}
+
+.iteam-category{
+    width: fit-content;
+    padding: 4px 12px;
+
+    border: 1px solid #BCB3CE;
+    border-radius: 4px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #2A1852;
+}
+@media screen and (max-width: 1500px) {
+   
+    .iteam{
+        width: 39vw;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+   
+    .iteam{
+        width:38vw;
+    }
+    
+}
+
+.iteam>img{
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px 12px 20px;
+    gap: 20px;
+}
+
+.list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list ul h3{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+.list ul a{
+    margin-top: 17px;
+    color: #366AF3;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 60px 60px;
+}
+
+footer ul{
+    display: flex;
+    gap: 40px;
+}
+
+footer ul a{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3;
+}
+
+footer div{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #999999;
+}
+

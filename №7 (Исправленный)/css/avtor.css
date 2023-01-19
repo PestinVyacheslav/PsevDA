@@ -1,0 +1,68 @@
+.catalogAndList{
+    flex-direction: row-reverse;
+}
+
+.list{
+    background: #FFFFFF;
+    height: fit-content;
+    box-shadow: 0px 4px 12px rgba(98, 76, 144, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.sbrb,.sbrb *,
+.Zapis,.Zapis *,select{
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;    
+    color: #000000;
+}
+
+select{
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.catalog>.iteam{
+    width: 36.7vw;
+}
+@media screen and (max-width: 1800px) {
+   
+    .catalog>.iteam{
+        width: 35.9vw;
+    }
+    
+}
+@media screen and (max-width: 1700px) {
+   
+    .catalog>.iteam{
+        width: 35vw;
+    }
+    
+}
+
+@media screen and (max-width: 1600px) {
+   
+    .catalog>.iteam{
+        width: 33.2vw;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+   
+    .catalog>.iteam{
+        width: 30.8vw;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+   
+    .catalog>.iteam{
+        width:29.3vw;
+    }
+    
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/lab6.css">
+    <title>Лабораторная работа №6 Modal Blog/1600px</title>
+</head>
+<body>
+    <header>
+        <div class="Logo_company">
+            <a href=".">
+                <img src="./css/Iteam/logo.svg" alt="">
+            </a>
+        </div>
+        <nav>
+            <a href=".">
+                <span><img src="./css/Iteam/i-user.svg" alt=""></span>
+                <span>Войти</span>
+            </a>
+            <a href=".">
+                Зарегистрироваться
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="ovrl">
+            <div class="modelview">
+                <div class="topElements">
+                    <div class="dg">Вход</div>
+                    <img src="./css/Iteam/Cl.png" alt="">
+                </div>
+                <div class="mainElemets">
+                    <form action="" method="post">
+                        <label for="LoginUser">
+                            Логин *
+                            <div>
+                                <input type="text" id="LoginUser" required>
+                            </div>
+                        </label>
+                        <label for="PasswordUser">
+                            Пароль *
+                            <div>
+                                <input type="password" id="PasswordUser" required>
+                            </div>
+                        </label>
+                        <button type="submit">Войти</button>
+                        <a href="#">Забыли пароль?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h1>Последние публикации</h1>
+        <div class="catalogAndList">
+            <div class="catalog">
+                <div class="iteam">
+                    <img src="./css/Iteam/post-1.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Работа с Git в Visual Studio Code</h3>
+                            <p>Один из способов работать с Гитом.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Git</div>
+                            <div class="iteam-category">Консоль</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./css/Iteam/post-2.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Adobe покупают Фигму. Всё пропало?</h3>
+                            <p>Не факт, но есть разные мнения.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Figma</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./css/Iteam/post-3.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Все научились программировать. А дальше-то что?</h3>
+                            <p>Ученье — свет.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Обучение</div>
+                            <div class="iteam-category">Карьера</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./css/Iteam/post-4.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Мне тяжело учиться, кто поможет?</h3>
+                            <p>Попали в патовую ситуацию? Тогда кликайте на статью.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Обучение</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./css/Iteam/post-5.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Ключевые навыки фронтендеров в 2022</h3>
+                            <p>Ежегодное исследование рынка от HTML Academy.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Обучение</div>
+                            <div class="iteam-category">Карьера</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./css/Iteam/post-6.png" alt="">
+                    <div class="block-text-info">
+                        <div class="up">
+                            <h3>Фронтенд-новости</h3>
+                            <p>WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</p>
+                        </div>
+                        <div class="down">
+                            <div class="iteam-category">Новости</div>
+                        </div>
+                    </div>
+                </div>
+                <button>Загрузить ещё 6</button>
+            </div>
+            <div class="list">
+                <ul>
+                    <h3>Рубрики</h3>
+                    <li><a href="." class="selectCategor">Обучение</a></li>
+                    <li><a href="." class="selectCategor">Карьера</a></li>
+                    <li><a href="." class="selectCategor">Figma</a></li>
+                    <li><a href="." class="selectCategor">Консоль</a></li>
+                    <li><a href="." class="selectCategor">Git</a></li>
+                    <li><a href="." class="selectCategor">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href=".">Об авторе</a></li>
+            <li><a href=".">Технологии</a></li>
+        </ul>
+        <div>© Blog, 2022</div>
+    </footer>
+    
+    <script src="./js/lab6.js"></script>
+</body>
+</html>

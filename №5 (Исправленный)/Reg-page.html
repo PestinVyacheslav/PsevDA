@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Header_footer.css">
+    <link rel="stylesheet" href="./css/reg.css">
+    <title>Лабораторная работа №5 Reg</title>
+</head>
+<body>
+    <header>
+        <div class="Logo_company">
+            <a href=".">
+                <img src="./css/Iteam/logo.svg" alt="">
+            </a>
+        </div>
+        <nav>
+            <a href=".">
+                <span><img src="./css/Iteam/i-user.svg" alt=""></span>
+                <span><a href=".">Войти</a></span>
+            </a>
+            <a href=".">
+                Зарегистрироваться
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>Регистрация</h1>
+        <form action="" method="post">
+            <div class="row">
+                <label for="namePerson">
+                    <span>Имя</span>
+                    <input type="text" id="namePerson">
+                </label>
+                <label for="surnamePerson">
+                    <span>Фамилия</span>
+                    <input type="text" id="surnamePerson">
+                </label>
+            </div>
+            <div class="row">
+                <label for="loginPerson">
+                    <span>Логин *</span>
+                    <input type="text" id="loginPerson" required>
+                    <div class="Conditions">
+                        <div class="condition"><img src="" alt="">Только буквы, цифры и символы @.+-_</div>
+                        <div class="condition"><img src="" alt="">Не более 150 символов</div>
+                    </div>
+                </label>
+                <label for="emailPerson">
+                    <span>E-mail</span>
+                    <input type="email" id="emailPerson">
+                </label>
+            </div>
+            <div class="row">
+                <label for="passwordPerson">
+                    <span>Пароль</span>
+                    <input type="password" id="passwordPerson" required>
+                    <div class="Conditions">
+                        <div class="condition"><img src="" alt="">Минимум 8 символов</div>
+                        <div class="condition"><img src="" alt="">Не может состоять только из цифр</div>                            
+                        <div class="condition"><img src="" alt="">Не должен совпадать с логином</div>
+                    </div>
+                </label>
+                <label for="requaredPasswordPerson">
+                    <span>Подтверждение пароля</span>
+                    <input type="password" id="requaredPasswordPerson" required>
+                    <div class="Conditions">
+                        <div class="condition"><img src="" alt="">Пароли не совпадают</div>
+                    </div>
+                </label>
+            </div>
+            <label for="cb">               
+                <input type="checkbox" id="cb" checked>
+                Даю своё согласие на обработку персональных данных
+            </label>
+            <button type="submit">Зарегистрировать</button>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><a href=".">Об авторе</a></li>
+            <li><a href=".">Технологии</a></li>
+        </ul>
+        <div>© Blog, 2022</div>
+    </footer>
+    <script src="./js/validByRegPage.js"></script>
+</body>
+</html>

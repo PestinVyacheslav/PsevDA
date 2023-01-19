@@ -1,0 +1,111 @@
+.ovrl{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 76, 144, 0.7);
+    display: none;
+    justify-content: center;
+}
+
+.modelview{
+    z-index: 15;
+    position: absolute;
+    top: 200px;
+    display: none;
+    flex-direction: column;
+    gap: 28px;
+    width: 480px;
+    height: 394px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(98, 76, 144, 0.5);
+    border-radius: 8px;
+}
+
+.topElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dg{
+    padding: 28px 0 0 32px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 777;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    cursor: move;
+    width: 100%;
+}
+h2{
+    margin: 0;
+}
+
+.topElements img{
+    padding: 28px 32px 0 0;
+    cursor: pointer;
+}
+
+.mainElemets{
+    padding: 0 32px 28px 32px;
+}
+
+form{
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+label{
+    width: 100%;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+}
+
+label input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0px 24px 24px;
+    margin-top: 4px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+form button{
+    border: none;
+    padding: 20px 40px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background: #624C90;
+    border-radius: 7px;
+    margin-right: 4px;
+}
+
+form a{
+    padding: 20px 0;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #472A85;
+}

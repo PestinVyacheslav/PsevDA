@@ -1,0 +1,86 @@
+form input,
+form textarea,
+form select{
+    padding: 24px 0px 24px 24px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+    outline: none;
+}
+
+form>label{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: rgba(17, 34, 68, 0.5);
+}
+
+textarea{
+    max-width: 100%;
+    min-height: 200px;
+}
+
+#ImgNewPublush{
+    display: none;
+}
+
+.addImgButton{
+    width: fit-content;
+
+    border: 1px solid #624C90;
+    border-radius: 7px;
+}
+
+.addImgButton span:first-child{
+    display: flex;
+    gap: 10px;
+    font-family: 'Golos Text VF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #624C90;
+    padding: 20px 40px;
+}
+
+.addImgButton.ok, 
+.addImgButton.ok span:first-child,
+.addImgButton.ok span:first-child>svg{
+    border-color: #005F17;
+    color: #005F17;
+    fill:#005F17;
+    stroke:#005F17
+}
+
+.addImgButton{
+    height: fit-content;
+}
+
+.progress{
+    width: 0%;
+    background-color: #005F17;
+    height: 3px;
+    border-radius: 2px;
+    margin-bottom: 0.1%;
+}
+
+.imgLabel{
+    flex-direction: unset;
+    gap: 8px;
+}
+
+.imgLabel img{
+    width: 300px;
+    display: none;
+}
